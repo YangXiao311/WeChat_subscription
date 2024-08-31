@@ -1,0 +1,2 @@
+代码循环部分存在变量指代不明的问题导致不同duration与不同phase时数据一样，已于2024-08-31-23:05做出更新以解决此问题。因正文修改字数，更新代码(R_code_corrected.R)已上传至GitHub.
+The issue of unclear variable references in the code's loop section caused identical data for different durations and phases. An update was made on 2024-08-31 at 23:05 to resolve this issue. Due to changes in the number of words in the main text, the updated code (R_code_corrected.R) has been uploaded to GitHub.
