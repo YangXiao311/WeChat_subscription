@@ -1,0 +1,166 @@
+DATASET_MULTIBAR
+#In multi-value bar charts, each ID is associated to multiple numeric values, which are displayed as a stacked or aligned bar chart
+#lines starting with a hash are comments and ignored during parsing
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,example multi bar chart
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#define colors for each individual field column (if
+
+#field labels
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#dataset scale: you can simply set the values where the scale will be drawn
+#DATASET_SCALE,2000,10000,20000
+#or you can specify value, label, color, width, style and label size factor for each scale line (dash separated, format: VALUE-LABEL-COLOR-WIDTH-DASHED-LABEL_SCALE_FACTOR)) 
+#DATASET_SCALE,2000-2k line-#0000ff-5-1-1,10000-line at 10k-#ff0000-1-0-2,20000-3rd line-#00ff00-5-1-1
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#maximum width
+WIDTH,1000
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+MARGIN,0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+SHOW_INTERNAL,0
+
+#bar height factor; Default bar height will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+HEIGHT_FACTOR,1
+
+#Bars are aligned to the node lines by default. Using BAR_SHIFT, you can move them all up/down by
+BAR_SHIFT,0
+
+#align individual fields; if set to 1, individual bar charts will not be stacked
+ALIGN_FIELDS,0
+FIELD_LABELS,JZS0,JZS2,XZS2,XZS0,NZS0,NZS2
+FIELD_COLORS,#a68a70,#7aaddb,#fca140,#fc5e5e,#7a8c54,#91c25e
+DATASET_SCALE,100,300,500,700
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#ID1,value1,value2,value3
+#ID2,value4,value5,value6
+#9606,10000,15000,9000
+#LEAF1|LEAF2,11000,9000,120007
+g__norank_c__Acidobacteria,10006,12399,17586,13578,14274,14212
+g__norank_f__Anaerolineaceae,13353,10187,13561,16093,12541,13543
+g__Intrasporangium,9981,11068,9706,13350,9099,12409
+g__norank_c__KD4-96,2560,3828,4978,4799,4497,4449
+g__Marmoricola,3153,3959,4664,2911,2848,4211
+g__norank_c__SJA-15,5115,3591,2081,3035,2987,3850
+g__Nitrospira,3420,2598,3234,3556,2882,3449
+g__Pseudarthrobacter,2413,2832,3773,3403,3481,3064
+g__Gaiella,2774,3457,2805,2135,3168,3300
+g__norank_f__Gemmatimonadaceae,2785,2767,3034,3069,2124,2282
+g__Roseiflexus,1781,2675,3228,1882,3098,3019
+g__norank_o__Acidimicrobiales,1800,2543,2275,1756,2785,2586
+g__norank_c__Actinobacteria,1635,1878,2325,1697,2458,3170
+g__norank_o__Gaiellales,1826,3010,1679,1651,2446,2404
+g__norank_o__SC-I-84,1827,2353,1769,1225,2675,2262
+g__norank_f__Elev-16S-1332,1491,2775,1628,1145,2521,2472
+g__norank_f__Nitrosomonadaceae,2201,1566,2819,1798,1771,1746
+g__norank_o__JG30-KF-CM45,1840,1421,1697,2171,2098,2042
+g__Thiobacillus,3993,781,353,2826,2053,797
+g__Anaeromyxobacter,1453,1563,1764,1923,1709,1581
+g__norank_c__TK10,1795,1525,1691,1486,1480,1922
+g__norank_o__Subgroup_7,1590,1633,1725,1425,1585,1757
+g__Bryobacter,1237,1717,1806,1162,1992,1507
+g__Sphingomonas,1768,2059,1234,1611,1523,1095
+g__Gemmatimonas,949,2077,1547,1525,1443,1679
+g__norank_f__Caldilineaceae,1801,2171,1150,1270,1244,1417
+g__norank_f__Xanthobacteraceae,1266,1672,998,1052,1796,1663
+g__norank_c__SBR2076,1476,1267,985,1601,1210,1745
+g__Nocardioides,1222,1609,1607,1381,1332,1118
+g__Haliangium,1277,1291,1703,1266,1399,1055
+g__norank_c__Ardenticatenia,1383,1261,1608,1376,1007,1057
+g__unclassified_p__Chloroflexi,1530,1371,699,1393,1004,1617
+g__Candidatus_Solibacter,698,1400,1191,1013,1709,1330
+g__H16,1104,1154,1161,810,1439,1371
+g__Mycobacterium,1000,1504,846,790,1458,1329
+g__unclassified_f__Syntrophobacteraceae,1625,1176,736,1159,785,1015
+g__Anaerolinea,943,866,1102,1552,939,959
+g__Bradyrhizobium,687,1080,1084,913,1444,1006
+g__Streptomyces,1027,1041,879,925,1062,1139
+g__unclassified_f__Intrasporangiaceae,960,1195,1036,941,959,819
+g__norank_p__Latescibacteria,718,736,1163,1317,913,1062
+g__norank_c__Gemmatimonadetes,898,1142,1013,840,578,822
+g__norank_o__43F-1404R,1247,480,266,1442,314,1499
+g__norank_f__Xanthomonadales_Incertae_Sedis,1044,991,787,751,836,743
+g__norank_f__Alcaligenaceae,1113,882,878,454,738,798
+g__Geobacter,1219,686,638,1104,583,431
+g__Agromyces,616,837,1191,979,556,372
+g__unclassified_f__Comamonadaceae,742,760,1038,615,755,583
+g__Clostridium_sensu_stricto_1,1440,471,347,824,659,697
+g__norank_o__TRA3-20,576,690,1021,589,689,725
+g__Desulfobacca,1047,683,305,548,683,880
+g__Flavisolibacter,560,834,766,713,497,687
+g__norank_f__Sporichthyaceae,537,612,1199,606,498,599
+g__norank_c__S085,644,460,628,608,520,928
+g__norank_c__Bacteroidetes_vadinHA17,901,712,342,768,424,390
+g__norank_p__Saccharibacteria,371,397,947,359,780,644
+g__Micromonospora,405,699,596,464,743,552
+g__RB41,249,591,714,359,896,592
+g__Bacillus,465,672,348,480,682,676
+g__norank_f__Blastocatellaceae__Subgroup_4_,351,605,770,575,438,434
+g__Ramlibacter,434,597,836,430,450,423
+g__Solirubrobacter,348,590,572,306,738,560
+g__Iamia,537,540,672,703,335,309
+g__norank_c__OPB35_soil_group,386,458,467,723,514,511
+g__norank_o__C0119,337,507,502,682,404,528
+g__Syntrophobacter,299,614,474,383,698,461
+g__unclassified_k__norank,562,456,391,544,399,567
+g__norank_f__Coriobacteriaceae,536,584,368,571,427,421
+g__Reyranella,341,567,507,557,497,396
+g__norank_f__BIrii41,435,317,585,411,523,457
+g__norank_f__Sandaracinaceae,740,355,340,492,396,311
+g__Pseudolabrys,425,471,253,499,503,472
+g__unclassified_f__Methylocystaceae,520,553,201,420,384,409
+g__norank_c__JG30-KF-CM66,329,432,508,294,400,508
+g__norank_f__Rhodobiaceae,504,427,265,262,503,503
+g__Thioalkalispira,1069,236,68,901,106,79
+g__Devosia,629,314,280,273,637,295
+g__Ilumatobacter,350,528,475,330,427,266
+g__DS-100,146,584,491,186,552,403
+g__Phenylobacterium,387,447,443,321,445,304
+g__norank_o__NB1-j,493,355,370,360,371,341
+g__Skermanella,164,398,490,255,548,399
+g__Lysobacter,554,385,444,477,172,208
+g__Desulfobulbus,734,630,145,320,201,191
+g__Kribbella,252,365,296,463,416,406
+g__CL500-29_marine_group,372,415,343,326,398,317
+g__Blastococcus,170,395,425,232,530,368
+g__Defluviicoccus,355,385,248,158,514,455
+g__Acidibacter,145,272,502,280,494,314
+g__11-24,214,337,390,372,336,326
+g__norank_o__Xanthomonadales,323,362,354,291,374,251
+g__Sorangium,283,367,420,205,329,287
+g__norank_c__SB-5,499,378,198,470,196,145
+g__Altererythrobacter,506,360,279,314,240,161
+g__unclassified_f__Gemmatimonadaceae,234,430,395,186,297,272
+g__unclassified_c__Betaproteobacteria,241,287,464,205,352,259
+g__Sideroxydans,404,306,173,652,133,117
+g__norank_c__NLS2-31,409,283,200,281,196,416
+g__norank_f__Rhodospirillaceae,189,269,568,169,333,252
+g__Variibacter,265,432,322,230,317,203

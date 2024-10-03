@@ -1,0 +1,160 @@
+DATASET_PIECHART
+#In pie chart datasets, each ID is associated to multiple numeric values, which are displayed as a pie chart directly on the node branch, or outside the tree
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+#SEPARATOR TAB
+SEPARATOR SPACE
+#SEPARATOR COMMA
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL example_pie_charts2
+
+#dataset color (can be changed later)
+COLOR #ff0000
+
+#define colors for each individual field column (use hexadecimal, RGB or RGBA notation; if using RGB/RGBA, COMMA cannot be used as SEPARATOR)
+
+#field labels
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap. Used only for piecharts which are displayed on the outside
+MARGIN 0
+
+#maximum pie chart radius will be displayed with this size, others will be proportionally smaller. This setting applies to internal pie charts only.
+MAXIMUM_SIZE 50
+
+#pie chart height factor; For external pie charts, default radius will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+HEIGHT_FACTOR 1
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+#the following fields are required for each node:
+#ID,position,radius,value1,value2,value3...
+#position defines the position of the pie chart on the tree:
+#  -1 = external pie chart
+#  a number between 0 and 1 = internal pie chart positioned at the specified value along the node branch (for example, position 0 is exactly at the start of node branch, position 0.5 is in the middle, and position 1 is at the end)
+
+#Examples
+
+#node 9606 will have an external pie chart
+#9606,-1,10,10000,15000,9000
+#LEAF1|LEAF2,0,50,11000,9000,120007
+
+FIELD_LABELS ZS0 ZS2
+FIELD_COLORS rgba(222,32,46,0.6) rgba(67,109,184,0.8)
+DATA
+g__norank_c__Acidobacteria -1 1 1950.33333333333 2059.66666666667
+g__norank_f__Anaerolineaceae -1 1 2168.33333333333 1811.22222222222
+g__Intrasporangium -1 1 1656.88888888889 1613.77777777778
+g__norank_c__KD4-96 -1 1 630 615
+g__norank_c__SJA-15 -1 1 530.333333333333 475.666666666667
+g__Marmoricola -1 1 416.666666666667 524.888888888889
+g__Pseudarthrobacter -1 1 484.888888888889 456.444444444444
+g__Nitrospira -1 1 435.111111111111 465.111111111111
+g__Gaiella -1 1 388.555555555556 474.555555555556
+g__Roseiflexus -1 1 344.111111111111 445.333333333333
+g__norank_f__Gemmatimonadaceae -1 1 369.222222222222 389.222222222222
+g__norank_o__Acidimicrobiales -1 1 298.777777777778 364.333333333333
+g__norank_c__Actinobacteria -1 1 304.444444444444 351.555555555556
+g__norank_o__Gaiellales -1 1 286.222222222222 350.222222222222
+g__norank_o__SC-I-84 -1 1 283.444444444444 324
+g__norank_f__Elev-16S-1332 -1 1 235.444444444444 334.555555555556
+g__norank_f__Nitrosomonadaceae -1 1 270 289.888888888889
+g__norank_c__TK10 -1 1 247.333333333333 276.777777777778
+g__Anaeromyxobacter -1 1 263.777777777778 257.555555555556
+g__norank_o__JG30-KF-CM45 -1 1 261.111111111111 259.888888888889
+g__norank_f__Caldilineaceae -1 1 200.888888888889 273.333333333333
+g__norank_o__Subgroup_7 -1 1 217.111111111111 250.777777777778
+g__Sphingomonas -1 1 233.444444444444 229.555555555556
+g__norank_c__SBR2076 -1 1 226.111111111111 226.777777777778
+g__Gemmatimonas -1 1 195.666666666667 252.333333333333
+g__Bryobacter -1 1 205.444444444444 240.333333333333
+g__unclassified_p__Chloroflexi -1 1 215.333333333333 199.888888888889
+g__norank_f__Xanthobacteraceae -1 1 186.444444444444 222.111111111111
+g__Thiobacillus -1 1 305.333333333333 98.2222222222222
+g__Haliangium -1 1 205.777777777778 187.111111111111
+g__Nocardioides -1 1 197.888888888889 192.444444444444
+g__norank_c__Ardenticatenia -1 1 179.333333333333 194
+g__Candidatus_Solibacter -1 1 173.333333333333 191.777777777778
+g__H16 -1 1 160.222222222222 183.888888888889
+g__Mycobacterium -1 1 150.666666666667 180.333333333333
+g__unclassified_f__Syntrophobacteraceae -1 1 187.111111111111 143.777777777778
+g__Anaerolinea -1 1 182.333333333333 136.555555555556
+g__norank_p__Latescibacteria -1 1 162.222222222222 150.222222222222
+g__norank_o__43F-1404R -1 1 130.888888888889 166.555555555556
+g__unclassified_f__Intrasporangiaceae -1 1 138.444444444444 141.888888888889
+g__Streptomyces -1 1 134 143.333333333333
+g__Bradyrhizobium -1 1 127.666666666667 147
+g__norank_c__Gemmatimonadetes -1 1 118.222222222222 151
+g__norank_f__Xanthomonadales_Incertae_Sedis -1 1 124.444444444444 125.777777777778
+g__norank_f__Alcaligenaceae -1 1 114.222222222222 124.555555555556
+g__unclassified_k__norank -1 1 115.111111111111 107.222222222222
+g__Desulfobacca -1 1 107.666666666667 112.444444444444
+g__norank_c__OPB35_soil_group -1 1 114.555555555556 101.777777777778
+g__norank_p__Saccharibacteria -1 1 97.7777777777778 118.111111111111
+g__Geobacter -1 1 124.888888888889 89.8888888888889
+g__unclassified_f__Comamonadaceae -1 1 104.111111111111 108
+g__Agromyces -1 1 98.2222222222222 109.111111111111
+g__Clostridium_sensu_stricto_1 -1 1 135.444444444444 69.5555555555556
+g__norank_o__TRA3-20 -1 1 87.8888888888889 112.444444444444
+g__norank_f__Sporichthyaceae -1 1 88.3333333333333 111.111111111111
+g__norank_c__S085 -1 1 80 114.666666666667
+g__Flavisolibacter -1 1 85.6666666666667 102.111111111111
+g__RB41 -1 1 83.3333333333333 95.2222222222222
+g__Micromonospora -1 1 75.7777777777778 95.8888888888889
+g__norank_c__Bacteroidetes_vadinHA17 -1 1 98.1111111111111 73.5555555555556
+g__Bacillus -1 1 79.6666666666667 88.7777777777778
+g__norank_f__Blastocatellaceae__Subgroup_4_ -1 1 75.1111111111111 88.5555555555556
+g__Iamia -1 1 79 80
+g__Solirubrobacter -1 1 71.1111111111111 82.5555555555556
+g__norank_f__Coriobacteriaceae -1 1 80.1111111111111 70.8888888888889
+g__Syntrophobacter -1 1 65.2222222222222 84.8888888888889
+g__norank_o__C0119 -1 1 69 79.3333333333333
+g__norank_c__JG30-KF-CM66 -1 1 53.3333333333333 85.1111111111111
+g__Ramlibacter -1 1 58.8888888888889 78.6666666666667
+g__Reyranella -1 1 66.1111111111111 71.3333333333333
+g__Pseudolabrys -1 1 73.8888888888889 62.6666666666667
+g__norank_f__Sandaracinaceae -1 1 74.4444444444444 60.6666666666667
+g__norank_f__BIrii41 -1 1 68 64.7777777777778
+g__Devosia -1 1 81.4444444444444 42.7777777777778
+g__unclassified_f__Methylocystaceae -1 1 61.6666666666667 61
+g__Phenylobacterium -1 1 57.7777777777778 60
+g__Lysobacter -1 1 63.1111111111111 54.4444444444444
+g__norank_f__Rhodobiaceae -1 1 55.2222222222222 58.6666666666667
+g__CL500-29_marine_group -1 1 53.8888888888889 56.2222222222222
+g__norank_o__NB1-j -1 1 59.2222222222222 48.5555555555556
+g__DS-100 -1 1 43.7777777777778 63.7777777777778
+g__Ilumatobacter -1 1 48.3333333333333 59.1111111111111
+g__Desulfobulbus -1 1 45.4444444444444 60.3333333333333
+g__norank_c__NLS2-31 -1 1 49.6666666666667 52.4444444444444
+g__11-24 -1 1 48.4444444444444 53.2222222222222
+g__Kribbella -1 1 49.6666666666667 50.5555555555556
+g__Defluviicoccus -1 1 49.4444444444444 50.5555555555556
+g__norank_c__SB-5 -1 1 58 41.5555555555556
+g__Skermanella -1 1 43.3333333333333 53.5555555555556
+g__Blastococcus -1 1 46.3333333333333 50.2222222222222
+g__Sorangium -1 1 42.1111111111111 52.4444444444444
+g__norank_o__Xanthomonadales -1 1 49.8888888888889 44.4444444444444
+g__Altererythrobacter -1 1 52.3333333333333 40.6666666666667
+g__unclassified_c__Betaproteobacteria -1 1 39.6666666666667 46.2222222222222
+g__Luedemannella -1 1 33.2222222222222 52.5555555555556
+g__Hydrogenispora -1 1 44.5555555555556 40.3333333333333
+g__norank_c__Gitt-GS-136 -1 1 46.7777777777778 37.7777777777778
+g__norank_o__Myxococcales -1 1 38.3333333333333 45.7777777777778
+g__Thioalkalispira -1 1 72.3333333333333 11.6666666666667
+g__unclassified_f__Gemmatimonadaceae -1 1 31.6666666666667 52.1111111111111
+
